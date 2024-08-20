@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&display=swap');
+*{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+:root {
+  --bg: #fff;
+  --action: #FFA5D4;
+  --txtB: #fff;
+  --txtD: #000;
+}
+sup{
+  color: #0015FF;
+  font-size: 12px;
+  font-weight: normal;
+}
+.hide{
+  display: none;
+}
+body{
+   margin: 0;
+}
+.DemoSlider{
+  width: 300px !important;
+  height: 500px !important;
+}
+p.summary{
+  background-color: #FFEDBF;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px dashed #000;
+  width: fit-content;
+  padding-right: 30px;
+}
+p.summary:after{
+  content: "\e0f0";
+  position: absolute;
+  color: var(--action);
+  top: 5px;
+  right: 5px;
+  color: #000;
+  font-family: 'Material Symbols Rounded';
+  font-size: 25px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-image: linear-gradient(to right, #e7bcee, #ffb9d0, #ffc1ad, #fdd397, #d4e79f);
+  color: #fff;
+}
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px
+}
+.links>a{
+  color: #000;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #fff;
+}
+.links>a:hover{
+  text-decoration: underline;
+}
+.show{
+  display: block;
+}
+.body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    background: var(--bg)
+}
+.body>aside{
+    background: #FFF1F8;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+    height: 100vh;
+    overflow: scroll;
+}
+.body>aside>p{
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.body>aside>p:hover{
+  background: var(--action);
+  color: var(--txtB);
+}
+.body>aside>p>span{
+  color: var(--action);
+}
+.body>aside>p:hover>span{
+  color: inherit;
+}
+.body>aside>p.select{
+  color:#fff;
+  box-shadow: 0 0 10px var(--action);
+}
+.body>aside>p.select>span{
+  color: inherit;
+}
+.content {
+  overflow: scroll;
+  padding: 20px;
+  height: 100vh;
+}
+
+.ToggleKit{
+  color: #fff;
+  font-size: 26px;
+  width: fit-content;
+  padding: 7px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--action);
+}
+.copy-button{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 10px var(--action);
+  color: #fff;
+  font-weight: bold;
+}
+.ani {
+    background: linear-gradient(358deg, #f4c0ff, #ffc0c5, #c0d4ff, #bdd8d6);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+[data-tooltip]:hover:after,
+[data-tooltip]:hover:before {
+  z-index: 10;
+}
+.address{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-top: 1px var(--action) solid ;
+  border-bottom: 1px solid var(--action);
+}
+.address>a{
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.address>a:hover{
+  background: var(--action);
+  color: #fff;
+}
+.cradit{
+  text-align: center;
+}
