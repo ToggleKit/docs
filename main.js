@@ -30,5 +30,10 @@ function copyToClipboard(cls) {
       console.error('Failed to copy: ', err);
     });
 };
+const menu = document.querySelector(".menu");
+menu.onclick = function(){
+  document.querySelector("aside").classList.toggle("active");
+  console.log('hello', document.querySelector("aside").outerHTML)
+}
 
 divHide('getStarted');
