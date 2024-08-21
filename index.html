@@ -15,6 +15,9 @@
 
 <body>
 <header>
+   <span class="material-symbols-rounded menu">
+   view_object_track
+ </span>
   <div class="logo">ToggleKit<sup> Beta</sup></div>
   <div class="links">
     <a href="#about">About</a>
@@ -88,6 +91,10 @@ CDNs</p>
     <span class="material-symbols-rounded">
 hide</span>
       Parent Hide</p>
+<p class="nav" onclick="divHide(`NextSiblingToggle`)">
+    <span class="material-symbols-rounded">
+rebase_edit</span>
+      Next Sibling Toggle</p>
 <!-- <p class="nav" onclick="divHide(`ScrollToTop`)">
     <span class="material-symbols-rounded">
 assistant_navigation </span>
@@ -617,7 +624,19 @@ Additionally, tabs can enhance the user experience by reducing the need for exce
 </div>
 <hr/>
 </div>
-
+<div class="section" id="NextSiblingToggle">
+  <h2>Text Sibling Toggle</h2>
+  <p>Next Sibling Toggle is hide and show the next sibling element by clicking previous button .</p>
+  <pre><code class="language-html u NextSiblingToggle">&lt;button data-tg=&quot;nextSiblingToggle&quot;&gt;ToggleKit&lt;/button&gt;
+&lt;div&gt; ToggleKit inomin &amp; tatino uf 7 gumika dor ftaitonamish 3 ek unimint , Sed&amp; zeu sed yik gojli yik kir!&lt;/div&gt;</code></pre>
+<button class="copy-button ani" onclick="copyToClipboard(`NextSiblingToggle`)">Copy Markup</button>
+<hr/>
+<h3>Demo</h3>
+<button data-tg="nextSiblingToggle">ToggleKit</button>
+<div> ToggleKit inomin & tatino uf 7 gumika dor ftaitonamish 3 ek unimint , Sed& zeu sed yik gojli yik kir!</div>
+</div>
+<hr/>
+<p class="summary">By default next sibling will be hidden after clicking previous element then the next element will visible</p>
 
 
 
@@ -627,7 +646,7 @@ Additionally, tabs can enhance the user experience by reducing the need for exce
   <div class="address">
     <a href="https://github.com/ToggleKit">GitHub</a>
     <a href="https://youtube.com/@toggle-kit">YouTube</a>
-    <a target="_blank" href="https://www.relaxtemplate.top/">Template</a>
+    <a href="hhtps://www.relaxtemplate.top">Template</a>
   </div>
   <p class="cradit"><b>ToggleKit</b> Interactive Components</p>
 </div>
