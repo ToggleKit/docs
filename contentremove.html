@@ -1,0 +1,28 @@
+
+<div class="section" id="ContentRemove">
+  <h2>Content Pass</h2>
+  <p>Content Remove related to Content Pass, If follow the Content Pass you can use this compotent . You just need to add a attribute in Content Pass tagetted element <b>data-remove</b></p>
+  <h3>Structure</h3>
+  <pre><code class="language-html u contentpass">&lt;div data-container data-aim=&quot;#terget&quot;&gt;
+&lt;ol data-code&gt;
+&lt;li&gt;List 1&lt;/li&gt;
+&lt;li&gt;List 2&lt;/li&gt;
+&lt;li&gt;List 3&lt;/li&gt;
+&lt;li&gt;List 4&lt;/li&gt;
+&lt;button data-fire&gt;Pass&lt;/button&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&quot;terget&quot; data-remove &gt;&lt;/div&gt;</code></pre>
+  <button class="copy-button ani" onclick="copyToClipboard(`contentpass`)">Copy Markup</button>
+  <hr />
+  <div data-container data-aim="#terget">
+  <ol data-code>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+    <li>List 4</li>
+    <button data-fire >Pass</button>
+  </ol>
+</div>
+<div id="terget" data-remove="null"></div>
+</div>
