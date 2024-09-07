@@ -1,0 +1,41 @@
+
+<div class="section" id="Slider">
+  <h2>Slider</h2>
+  <p>A slider displays one image at a time, allowing visitors to navigate through images using next and previous buttons. Each transition is accompanied by a smooth animation. Multiple sliders can be implemented on a single page, each functioning independently. Additionally, these sliders can be customized with various transition effects and navigation styles to enhance user experience.</p>
+  <h3>Structure</h3>
+  <pre><code class="language-html u Slider">&lt;div data-rt=&quot;sdc&quot; data-tg=&quot;sliderBox&quot;&gt;
+  &lt;div data-rt=&quot;sdr&quot; data-tg=&quot;slideable&quot;&gt;
+    &lt;img src=&quot;https://picsum.photos/id/237/300/500&quot; alt=&quot;&quot;/&gt;
+    &lt;img src=&quot;https://picsum.photos/id/227/300/500&quot; alt=&quot;&quot;/&gt;
+    &lt;img src=&quot;https://picsum.photos/id/235/300/500&quot; alt=&quot;&quot;/&gt;
+    &lt;img src=&quot;https://picsum.photos/id/230/300/500&quot; alt=&quot;&quot;/&gt;
+    &lt;img src=&quot;https://picsum.photos/id/238/300/500&quot; alt=&quot;&quot;/&gt;
+    &lt;img src=&quot;https://picsum.photos/id/225/300/500&quot; alt=&quot;&quot;/&gt;
+    &lt;img src=&quot;https://picsum.photos/id/234/300/500&quot; alt=&quot;&quot;/&gt;
+    &lt;img src=&quot;https://picsum.photos/id/231/300/500&quot; alt=&quot;&quot;/&gt;
+  &lt;/div&gt;
+  &lt;button data-rt=&quot;prev&quot; data-tg=&quot;prev&quot;&gt;Prev&lt;/button&gt;
+  &lt;button data-rt=&quot;next&quot; data-tg=&quot;next&quot;&gt;Next&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+  <button class="copy-button ani" onclick="copyToClipboard(`Slider`)">Copy Markup</button>
+  <hr/>
+  <h3>Demo</h3>
+  <div class="DemoSlider" data-rt="sdc" data-tg="sliderBox">
+   <div data-rt="sdr" data-tg="slideable">
+     <img  src="https://picsum.photos/id/237/300/300" alt="" />
+     <img src="https://picsum.photos/id/227/300/300" alt="" />
+     <img src="https://picsum.photos/id/235/300/300" alt="" />
+     <img src="https://picsum.photos/id/230/300/300" alt="" />
+     <img src="https://picsum.photos/id/238/300/300" alt="" />
+     <img src="https://picsum.photos/id/225/300/300" alt="" />
+     <img src="https://picsum.photos/id/234/300/300" alt="" />
+     <img src="https://picsum.photos/id/231/300/300" alt="" />
+     </div>
+   <button data-rt="prev" data-tg="prev">Prev</button>
+   <button data-rt="next" data-tg="next">Next</button>
+   </div>
+  <hr/>
+  <p class="summary">Note: Make sure all the image are equal  width or define weight by css .</p>
+    
+  </code></pre>
+</div>
