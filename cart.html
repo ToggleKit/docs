@@ -1,0 +1,57 @@
+
+<div class="section" id="Cart">
+  <h2>Cart</h2>
+  <p>Users can add their favorite items to a cart. The selected items will remain in the cart until the user decides to remove them. Each page can have only one cart, but the cart can contain multiple items. Additionally, users can easily manage their cart by adding or removing items as they wish, ensuring a seamless selecting experience.</p>
+  <pre><code class="language-html u Cart">  &#x3C;div data-tg=&#x22;cart&#x22;&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div data-tg=&#x22;cItem&#x22; id=&#x22;tg-001&#x22;&#x3E;
+  &#x3C;a href=&#x22;https://contents-up.blogspot.com/p/about.html&#x22; data-tg=&#x22;cURL&#x22;&#x3E;
+  &#x3C;img src=&#x22;https://picsum.photos/300/300?image=3&#x22; alt=&#x22;&#x22; data-tg=&#x22;cImg&#x22; /&#x3E;
+  &#x3C;h1 data-tg=&#x22;cTitle&#x22;&#x3E;Shetu rakib &#x3C;/h1&#x3E;
+  &#x3C;/a&#x3E;
+  &#x3C;button data-tg=&#x22;cAdd&#x22;&#x3E;Add&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;</code></pre>
+<button class="copy-button ani" onclick="copyToClipboard(`Cart`)">Copy Markup</button>
+<h3>Demo</h3>
+  <div data-tg="cart"></div>
+  <div data-tg="cItem" id="tg-001">
+    <a href="https://contents-up.blogspot.com/p/about.html" data-tg="cURL">
+      <img src="https://picsum.photos/300/300?image=3" alt="" data-tg="cImg" />
+      <h1 data-tg="cTitle">Shetu rakib </h1>
+    </a>
+    <button data-tg="cAdd">Add</button>
+  </div>
+  <div data-tg="cItem" id="tg-002">
+    <a href="https://contents-up.blogspot.com" data-tg="cURL">
+      <img src="https://picsum.photos/300/300?image=2" alt="" data-tg="cImg" />
+      <h1 data-tg="cTitle">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+    </a>
+    <button data-tg="cAdd">Add</button>
+  </div>
+  <div data-tg="cItem" id="tg-003">
+    <a href="https://contents-up.blogspot.com" data-tg="cURL">
+      <img src="https://picsum.photos/300/300?image=4" alt="" data-tg="cImg" />
+      <h1 data-tg="cTitle">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+    </a>
+    <button data-tg="cAdd">Add</button>
+  </div>
+  <div data-tg="cItem" id="tg-004">
+    <a href="https://contents-up.blogspot.com/p/////about.html" data-tg="cURL">
+      <img src="https://picsum.photos/300/300?image=9" alt="" data-tg="cImg" />
+      <h1 data-tg="cTitle">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+    </a>
+    <button data-tg="cAdd">Add</button>
+  </div>
+<hr/>
+<h3>Selectors</h3>
+<pre><code class="language-html u"> [data-tg="cart"] = cart div where all selected items will be visible
+ [data-tg="selectedItem"] = selected items in cart
+ [data-tg="itemRemoveBtn"] = item remove button in cart
+ [data-tg="cItem"] = main item container
+ #id = post/article id [unique]
+ [data-tg="cURL"] = item post/article anchor tag
+ [data-tg="cImg"] = post/article thumbnail image
+ [data-tg="cTitle"] = post/article main title
+ [data-tg="cAdd"] = checkbox for selection favourite items</code></pre>
+ <hr/>
+ <p class="summary">Note: Users can add their favorite items to a cart, allowing them to explore and review these items later. The selected items will remain in the cart until the user decides to remove them. Note: Each page can have only one cart. Favorite items are saved in the browser’s localStorage, not in any backend database. The cart can contain multiple items, and users can easily manage their cart by adding or removing items as they wish, ensuring a seamless shopping experience.</p>
+</div>
