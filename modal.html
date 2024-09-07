@@ -1,0 +1,99 @@
+
+<div class="section" id="Modal">
+  <h2>Modal</h2>
+  <p>A modal is a popup window that appears on top of the main content of a webpage. It contains text content and provides a boolean choice, typically in the form of “Yes” or “No” buttons. Visitors can read the text content within the modal and make a selection by clicking one of the buttons. This interaction often requires the visitor to make a decision or provide confirmation before they can proceed. Multiple modals can be used on the same page, each serving different purposes, such as displaying alerts, collecting user input, or providing additional information without navigating away from the current page.</p>
+  <h3>Structure</h3>
+  <pre><code class="language-html u Modal">&lt;div data-tg=&quot;modal&quot;&gt;
+  &lt;button data-tg=&quot;eventer&quot;&gt;Show Popup&lt;/button&gt;
+    &lt;div data-tg=&quot;shadow&quot;&gt;
+      &lt;div data-tg=&quot;container&quot;&gt;
+        &lt;div data-tg=&quot;header&quot;&gt;
+          &lt;h3&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h3&gt;
+          &lt;button data-tg=&quot;closer&quot;&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div data-tg=&quot;body&quot;&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div data-tg=&quot;footer&quot;&gt;
+          &lt;button data-tg=&quot;saver&quot;&gt;Save&lt;/button&gt;
+          &lt;button data-tg=&quot;canceller&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+<button class="copy-button ani" onclick="copyToClipboard(`Modal`)">Copy Markup</button>
+<hr/>
+<h3>Demo</h3>
+<div data-tg="modal">
+  <button data-tg="eventer">Show Popup</button>
+    <div data-tg="shadow">
+      <div data-tg="container">
+        <div data-tg="header">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+          <button data-tg="closer">Close</button>
+        </div>
+        <div data-tg="body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+          </p>
+        </div>
+        <div data-tg="footer">
+          <button data-tg="saver">Save</button>
+          <button data-tg="canceller">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<hr/>
+<h3>Selectors</h3>
+<pre><code class="language-html u">[data-tg="eventer"] = show modal container by clicking this buttons
+[data-tg="shadow"] = shadow of the modal (customisable)
+[data-tg="container"] = modal main container (customisable)
+[data-tg="header"] = header of the modal
+[data-tg="header"]>h3 = modal title
+[data-tg="closer"] = modal closer button
+[data-tg="body"] = modal body
+[data-tg="body"]>p = modal text content (customisable)
+[data-tg="footer"] = modal footer
+[data-tg="saver"] = visitor can agree with condition by clicking this button
+[data-tg="canceller"] = visitor can disagree with condition by clicking this button</code></pre>
+<hr/>
+<h3>Customization</h3>
+<pre><code class="language-html u">&lt;script&gt;
+const modal = {
+  shadow: &quot;#abc&quot;,
+    container: {
+    background: &quot;#abc&quot;,
+    maxWidth: &quot;321px&quot;,
+    minWidth: &quot;123px&quot;,
+    border: &quot;solid 1px #abc&quot;,
+    borderRadius: &quot;12px&quot;,
+      text: {
+      textAlign: &quot;justify&quot;,
+      maxHeight: &quot;321px&quot;
+      }
+    }
+  }
+&lt;/script&gt;</code></pre>
+<hr/>
+<h3>Default</h3>
+<pre><code class="language-html u">&lt;script&gt;
+modal = {
+  shadow: "#00000033",
+    container: {
+    background: "#fff",
+    maxWidth: "250px",
+    minWidth: "200px",
+    border: "solid 1px #000",
+    borderRadius: "10px",
+      text: {
+      textAlign: "justify",
+      maxHeight: "200px"
+      }
+    }
+  }
+  &lt;/script&gt;</code></pre>
+  
+</div>
