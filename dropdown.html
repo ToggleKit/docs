@@ -1,0 +1,35 @@
+
+<div class="section" id="DropDown">
+  <h2>Drop Down</h2>
+  <p>A drop-down is a list of items that appears after clicking a button. On a single page, there can be multiple drop-downs, and each drop-down can interact with the others. This functionality allows for a more dynamic and interactive user experience. For instance, selecting an option in one drop-down can filter or change the options available in another. This interconnected behavior is particularly useful in forms and complex interfaces, making navigation and data entry more efficient and user-friendly.</p>
+  <h3>Structure</h3>
+  <pre><code class="language-html u DropDown">&lt;div data-tg=&quot;dropDown&quot;&gt;
+  &lt;button&gt;Drop Down&lt;/button&gt;
+  &lt;div&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item 4&lt;/li&gt;
+    &lt;li&gt;Item 5&lt;/li&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-button ani" onclick="copyToClipboard(`DropDown`)">Copy Markup</button>
+<hr/>
+<h3>Demo</h3>
+<div data-tg="dropDown">
+  <button>Drop Down</button>
+  <div>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </div>
+</div>
+<hr/>
+<h3>Selectors</h3>
+<pre><code class="language-html u">[data-tg="dropDown"] = main dropDown container
+[data-dropon] = after visible dropDown div</code></pre>
+<hr/>
+<p class="summary">Note: By default all dropDown hidden if one dropDown is visible than all other will hide .</p>
+</div>
