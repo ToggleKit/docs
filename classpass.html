@@ -1,0 +1,21 @@
+
+<div class="section" id="ClassPass">
+  <h2>Class Pass</h2>
+  <p><b>Class Pass</b> components accepts two parameters:
+</p>
+<li>1. <b>data-aim='#target'</b> : Specifies the element to which the class will be added.</li>
+<li>2. <b>data-class='active'</b> : Specifies the class name to be toggled.</li>
+
+<p>When the host element is clicked, the specified class will be toggled on the target element. <b>The data-pass=''</b> attribute can contain any valid CSS selector.</p>
+  <h3>Structure</h3>
+  <pre><code class="language-html u classPass">&lt;button data-class=&apos;active&apos; data-aim=&apos;.terget&apos;&gt;Pass The Class&lt;/button&gt;
+&lt;li&gt;List 1&lt;/li&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;li class=&quot;terget&quot;&gt;List&lt;/li&gt;</code></pre>
+  <button class="copy-button ani" onclick="copyToClipboard(`classPass`)">Copy Markup</button>
+  <hr />
+  <button data-class='active' data-aim='.terget'>Pass The Class</button>
+  <li>List 1</li>
+  <li>List</li>
+  <li class="terget">List</li>
+</div>
