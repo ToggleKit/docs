@@ -9,14 +9,12 @@
   <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsz6lmNrRAxIhoWqKxNrXSXGyVZzhT8PZNfLCSpJguWhmsCj9KpWG6ovvaerBVaOXHjV1pYO3Nmkq4cChEiWs0E-zF8g3H8UZgiln4BreFkYwBFndx0m5bIztnllSxCfm70VxicAD4waTa_Dj1VFdDOMGawEwYH2_v8KWby2Y_1yWuFn8NGzrqQ9M3xyc/s1600/359876418-d8f984ff-902e-4cc0-8040-33bdfb5e8cb5%20%281%29.png">
   <meta property="og:url" content="https://togglekit.github.io/docs/">
   <meta name="twitter:card" content="summary_large_image">
+  <meta http-equiv="refresh" content="30">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#4285f4">
   <link href='https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@300' rel='stylesheet' />
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="prism.css"/>
-  <link href='https://cdn.jsdelivr.net/gh/ToggleKit/Social-Icons-Package-@main/style.css' rel='stylesheet' />
-  <link href='https://cdn.jsdelivr.net/gh/ToggleKit/Plugins@main/style.css' rel='stylesheet' />
-  <script defer='defer' src='https://cdn.jsdelivr.net/gh/ToggleKit/Plugins@main/main.js' type='text/javascript'></script>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content="Frontent Interactive Components Plugin"/>
@@ -25,643 +23,148 @@
 </head>
 
 <body>
-  
+  <div id="popup">Text Copied To Clipboard</div>
 <header>
-   <span class="material-symbols-rounded menu">
+   <span class="material-symbols-rounded menu notranslate">
    view_object_track
  </span>
-  <div class="logo"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsz6lmNrRAxIhoWqKxNrXSXGyVZzhT8PZNfLCSpJguWhmsCj9KpWG6ovvaerBVaOXHjV1pYO3Nmkq4cChEiWs0E-zF8g3H8UZgiln4BreFkYwBFndx0m5bIztnllSxCfm70VxicAD4waTa_Dj1VFdDOMGawEwYH2_v8KWby2Y_1yWuFn8NGzrqQ9M3xyc/s1600/359876418-d8f984ff-902e-4cc0-8040-33bdfb5e8cb5%20%281%29.png" alt="">ToggleKit</div>
+  <a class='logolink' href="#home">
+    <div class="logo"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsz6lmNrRAxIhoWqKxNrXSXGyVZzhT8PZNfLCSpJguWhmsCj9KpWG6ovvaerBVaOXHjV1pYO3Nmkq4cChEiWs0E-zF8g3H8UZgiln4BreFkYwBFndx0m5bIztnllSxCfm70VxicAD4waTa_Dj1VFdDOMGawEwYH2_v8KWby2Y_1yWuFn8NGzrqQ9M3xyc/s1600/359876418-d8f984ff-902e-4cc0-8040-33bdfb5e8cb5%20%281%29.png" alt="logo"/>
+    <span>ToggleKit</span>
+    </div>
+  </a>
   <div class="links">
-    <a target="_black" href="https://github.com/ToggleKit/docs/blob/main/LICENSE">Licence</a>
-  </div>
+  <a target="_black" href="https://github.com/ToggleKit/docs/blob/main/LICENSE">Licence</a>
+  <a target="_black" href="#home">about</a>
+</div>
+  <span class="material-symbols-rounded notranslate" id="mode"/>
+</span>
+  
 </header>
+ 
 <div class="body">
-  <aside>
-<p class="nav" onclick="divHide(`getStarted`)"><span class="material-symbols-rounded">
-  bookmark_flag
-</span>Get Started</p>
-<p class="nav" onclick="divHide(`CDNs`)">
-      <span class="material-symbols-rounded">
-  link
-</span>
-CDNs</p>
-<p class="nav" onclick="divHide(`NestMenu`)">
-      <span class="material-symbols-rounded">
-  rebase
-</span>
-      Nest Menu</p>
-<p class="nav" onclick="divHide(`Modal`)">
-      <span class="material-symbols-rounded">
-  wysiwyg
-</span>
-      Modal</p>
-<p class="nav" onclick="divHide(`Slider`)">
-      <span class="material-symbols-rounded">
-  move_group
-</span>
-      Slider</p>
-<p class="nav" onclick="divHide(`Tooltip`)">
+ <aside>
+   <a href="#home"><span class="material-symbols-rounded">
+       bookmark_flag
+     </span>Get Started</a>
+   <a href='#cdns'>
+     <span class="material-symbols-rounded">
+       link
+     </span>
+     CDNs</a>
+   <a href="#nestmenu">
+     <span class="material-symbols-rounded">
+       rebase
+     </span>
+     Nest Menu</a>
+   <a href="#modal">
+     <span class="material-symbols-rounded">
+       wysiwyg
+     </span>
+     Modal</a>
+   <a href="#slider">
+     <span class="material-symbols-rounded">
+       move_group
+     </span>
+     Slider</a>
+   <a href='#tooltip'>
+     <span class="material-symbols-rounded">
+       tooltip
+     </span>
+     Tooltip
+   </a>
+   <a href="#tab">
+     <span class="material-symbols-rounded">
+       tab
+     </span>
+     Tab
+   </a>
+   <a href='#pager'>
+     <span class="material-symbols-rounded">
+       note_stack
+     </span>
+     Pager</a>
+   <a href="#dropdown">
+     <span class="material-symbols-rounded">
+       arrow_drop_down_circle
+     </span>
+     Drop Down</a>
+   <a href="#alert">
+     <span class="material-symbols-rounded">
+       notifications
+     </span>
+     Alert</a>
+   <a href="#rangecount">
+     <span class="material-symbols-rounded">
+       arrow_range
+     </span>
+     Range Count</a>
+   <a href="#cart">
+     <span class="material-symbols-rounded">
+       shopping_bag
+     </span>
+     Cart</a>
+   <a href="#parenthide">
+     <span class="material-symbols-rounded">
+       hide</span>
+     Parent Hide</a>
+   <a href="#nextsiblingtoggle">
+     <span class="material-symbols-rounded">
+       rebase_edit</span>
+     Next Sibling Toggle</a>
+   <a href="#classpass">
   <span class="material-symbols-rounded">
-  tooltip
-  </span>
-  Tooltip
-</p>
-<p class="nav" onclick="divHide(`Tab`)">
+    send_money</span>
+  Class Pass</a>
+     <a href="#contentpass">
+     <span class="material-symbols-rounded">
+       difference</span>
+     Content Pass</a>
+     <a href="#contentremove">
   <span class="material-symbols-rounded">
-    tab
-  </span>
-  Tab
-</p>
-<p class="nav" onclick="divHide(`Pager`)">
-      <span class="material-symbols-rounded">
-  note_stack
-</span>
-      Pager</p>
-<p class="nav" onclick="divHide(`DropDown`)">
-    <span class="material-symbols-rounded">
-  arrow_drop_down_circle
-</span>
-      Drop Down</p>
-<p class="nav" onclick="divHide(`Alert`)">
-    <span class="material-symbols-rounded">
-  notifications
-</span>
-      Alert</p>
-<p class="nav" onclick="divHide(`RangeCount`)">
-    <span class="material-symbols-rounded">
-  arrow_range
-</span>
-      Range Count</p>
-<p class="nav" onclick="divHide(`Cart`)">
-    <span class="material-symbols-rounded">
-  shopping_bag
-</span>
-      Cart</p>
-<p class="nav" onclick="divHide(`ParentHide`)">
-    <span class="material-symbols-rounded">
-hide</span>
-      Parent Hide</p>
-<p class="nav" onclick="divHide(`NextSiblingToggle`)">
-    <span class="material-symbols-rounded">
-rebase_edit</span>
-      Next Sibling Toggle</p>
-<!-- <p class="nav" onclick="divHide(`ScrollToTop`)">
-    <span class="material-symbols-rounded">
-assistant_navigation </span>
-      Scroll To Top</p> -->
-  </aside>
-  <div class="content">
-<div class="section" id="getStarted">
-      <h1 class="ani ToggleKit">ToggleKit 1.0.1</h1>
-      <h2>Get Started</h2>
-      <h3>ToogleKit: A Versatile Frontend Interactive Components Framework</h3>
-      <p>ToogleKit is an innovative frontend interactive components framework designed to enhance web development with its lightweight, easy-to-use, and highly customizable components. This framework offers a comprehensive suite of plugins that cater to various needs, making it an invaluable tool for developers aiming to create dynamic and responsive web applications.</p>
-      <p>One of the standout features of ToogleKit is its lightweight nature, ensuring that it does not bloat your project with unnecessary code. This efficiency is crucial for maintaining fast load times and optimal performance, which are essential for a positive user experience. Additionally, ToogleKit’s components are designed to be intuitive and straightforward, allowing developers of all skill levels to integrate them seamlessly into their projects.
-Customization is at the heart of ToogleKit. Each component can be tailored to fit the specific requirements of a project, providing developers with the flexibility to create unique and engaging user interfaces. Whether it’s adjusting the appearance or modifying the behavior of a component, ToogleKit makes it easy to achieve the desired outcome without extensive coding.</p>
-<p>
-  The framework includes a variety of components that address common UI needs. From navigation elements like menus and tabs to interactive features such as modals and sliders, ToogleKit covers a broad spectrum of functionalities. These components are not only versatile but also designed to work harmoniously together, ensuring a cohesive and polished final product.
-</p>
-<p>ToogleKit’s ease of use is further enhanced by its comprehensive documentation and community support. Developers can quickly find the information they need to implement and customize components, reducing the learning curve and speeding up the development process. The active community also provides a platform for sharing tips, troubleshooting issues, and collaborating on projects.</p>
-<p class="summary">
-  In summary, ToogleKit is a powerful and flexible frontend framework that empowers developers to build sophisticated web applications with ease. Its lightweight design, extensive customization options, and wide range of components make it an excellent choice for any web development project. Whether you’re a seasoned developer or just starting, ToogleKit offers the tools you need to create engaging and responsive user interfaces.
-</p>
-    </div>
-<div class="section" id="CDNs">
-  <h2>CDNs</h2>
-  <h3>CSS</h3>
-  <pre><code class="language-html u CSSCDN">&lt;link href=&apos;https://cdn.jsdelivr.net/gh/ToggleKit/Plugins@main/style.css&apos; rel=&apos;stylesheet&apos; /&gt;
-</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`CSSCDN`)">Copy CSS CDNs</button>
-<hr/>
-  <h3>JS</h3>
-  <pre><code class="language-html u JSCDN">&lt;script defer=&apos;defer&apos; src=&apos;https://cdn.jsdelivr.net/gh/ToggleKit/Plugins@main/main.js&apos; type=&apos;text/javascript&apos;&gt;&lt;/script&gt;
-</code></pre>
- <button class="copy-button ani" onclick="copyToClipboard(`JSCDN`)">Copy JS CDNs</button>
-
+    file_copy_off</span>
+  Content Remove</a>
+  <a href="#copyto">
+  <span class="material-symbols-rounded">
+    assignment</span>
+  Copy To</a>
+  <a href="#textlimit">
+  <span class="material-symbols-rounded">
+    edit_note</span>
+  Text Limit</a>
+   <a href="#scrolltotop">
+   <span class="material-symbols-rounded">
+     arrow_upward</span>
+   Scroll To Top</a>
+ </aside>
+ <div id="app">
+  <div class="section" id="getStarted">
+  <h1 class="ani ToggleKit">ToggleKit 2.0</h1>
+  <h2>Get Started</h2>
+  <h3>ToogleKit: A Frontend Interactive Components Framework</h3>
+  <p>ToogleKit is an innovative frontend interactive components framework designed to enhance web development with its lightweight, easy-to-use, and highly customizable components. This framework offers a comprehensive suite of plugins that cater to various needs, making it an invaluable tool for developers aiming to create dynamic and responsive web applications.</p>
+  <p>One of the standout features of ToogleKit is its lightweight nature, ensuring that it does not bloat your project with unnecessary code. This efficiency is crucial for maintaining fast load times and optimal performance, which are essential for a positive user experience. Additionally, ToogleKit’s components are designed to be intuitive and straightforward, allowing developers of all skill levels to integrate them seamlessly into their projects.
+    Customization is at the heart of ToogleKit. Each component can be tailored to fit the specific requirements of a project, providing developers with the flexibility to create unique and engaging user interfaces. Whether it’s adjusting the appearance or modifying the behavior of a component, ToogleKit makes it easy to achieve the desired outcome without extensive coding.</p>
+  <p>
+    The framework includes a variety of components that address common UI needs. From navigation elements like menus and tabs to interactive features such as modals and sliders, ToogleKit covers a broad spectrum of functionalities. These components are not only versatile but also designed to work harmoniously together, ensuring a cohesive and polished final product.
+  </p>
+  <p>ToogleKit’s ease of use is further enhanced by its comprehensive documentation and community support. Developers can quickly find the information they need to implement and customize components, reducing the learning curve and speeding up the development process. The active community also provides a platform for sharing tips, troubleshooting issues, and collaborating on projects.</p>
+  <p class="summary">
+    In summary, ToogleKit is a powerful and flexible frontend framework that empowers developers to build sophisticated web applications with ease. Its lightweight design, extensive customization options, and wide range of components make it an excellent choice for any web development project. Whether you’re a seasoned developer or just starting, ToogleKit offers the tools you need to create engaging and responsive user interfaces.
+  </p>
 </div>
-<div class="section" id="NestMenu">
-  <h2>Nest Menu</h2>
-  <p>The nestMenu component serves as the navigator for a website, converting a list of links into a dropdown navigation menu. Note that only one nestMenu can be added to a webpage. This component also adds class names to the dropdowns, allowing for custom styling. Additionally, it enables you to specify the container for the dropdown navigation bar and define the breakpoints.</p>
-  <h3>Structure</h3>
-    <pre><code class="language-html u NestMenu">&lt;div data-tg=&apos;nestMenu&apos;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt; Services &lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;_service 1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;__service 1.1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;_Project 1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;_Project 2&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;__Project 2.1&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;__Project 2.2&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`NestMenu`)"
->Copy Markup</button>
-<hr/>
-<h3>Demo</h3>
-<div data-tg='nestMenu'>
-  <ul>
-    <li><a href="#"> Services </a></li>
-    <li><a href="#">_service 1</a></li>
-    <li><a href="#">__service 1.1</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">_Project 1</a></li>
-    <li><a href="#">_Project 2</a></li>
-    <li><a href="#">__Project 2.1</a></li>
-    <li><a href="#">__Project 2.2</a></li>
-  </ul>
 </div>
-<hr/>
-<h3>Convert into</h3>
-    <pre><code class="language-html u">
-&lt;div data-tg=&quot;nestMenu&quot;&gt;
-  &lt;ul&gt;
-    &lt;li class=&quot;on-sub&quot;&gt;
-      &lt;a href=&quot;javascript:void(0)&quot;&gt; Services &lt;/a&gt;
-      &lt;ul class=&quot;sub-menu&quot;&gt;
-        &lt;li class=&quot;drop-1&quot;&gt;
-          &lt;a href=&quot;javascript:void(0)&quot;&gt;service 1&lt;/a&gt;
-          &lt;ul class=&quot;sub-sub-menu&quot;&gt;
-            &lt;li class=&quot;drop-2&quot;&gt;
-              &lt;a href=&quot;#&quot;&gt;service 1.1&lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  
-    &lt;li class=&quot;on-sub&quot;&gt;
-      &lt;a href=&quot;javascript:void(0)&quot;&gt;Projects&lt;/a&gt;
-      &lt;ul class=&quot;sub-menu&quot;&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot;&gt;Project 1&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot;drop-1&quot;&gt;
-          &lt;a href=&quot;javascript:void(0)&quot;&gt;Project 2&lt;/a&gt;
-          &lt;ul class=&quot;sub-sub-menu&quot;&gt;
-            &lt;li class=&quot;drop-2&quot;&gt;
-              &lt;a href=&quot;#&quot;&gt;Project 2.1&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;drop-2&quot;&gt;
-              &lt;a href=&quot;#&quot;&gt;Project 2.2&lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-<hr/>
-<h3>Selectors</h3>
-<pre><code class="language-html u">
-[data-tg='nestMenu'] = main container
-.on-sub = parent menu
-.sub-menu = first sub menu container (ul)
-.sub-menu.show = add class name after .on-sub clicked
-.drop-1 = first sub menu lists (li)
-.sub-sub-menu = second sub menu container (ul)
-.sub-sub-menu.show = add class name after .drop-1 clicked
-.drop-2 = second sub menu lists (li)
-</code></pre>
-</div>
-<div class="section" id="Modal">
-  <h2>Modal</h2>
-  <p>A modal is a popup window that appears on top of the main content of a webpage. It contains text content and provides a boolean choice, typically in the form of “Yes” or “No” buttons. Visitors can read the text content within the modal and make a selection by clicking one of the buttons. This interaction often requires the visitor to make a decision or provide confirmation before they can proceed. Multiple modals can be used on the same page, each serving different purposes, such as displaying alerts, collecting user input, or providing additional information without navigating away from the current page.</p>
-  <h3>Structure</h3>
-  <pre><code class="language-html u Modal">&lt;div data-tg=&quot;modal&quot;&gt;
-  &lt;button data-tg=&quot;eventer&quot;&gt;Show Popup&lt;/button&gt;
-    &lt;div data-tg=&quot;shadow&quot;&gt;
-      &lt;div data-tg=&quot;container&quot;&gt;
-        &lt;div data-tg=&quot;header&quot;&gt;
-          &lt;h3&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h3&gt;
-          &lt;button data-tg=&quot;closer&quot;&gt;Close&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;div data-tg=&quot;body&quot;&gt;
-          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit
-          &lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div data-tg=&quot;footer&quot;&gt;
-          &lt;button data-tg=&quot;saver&quot;&gt;Save&lt;/button&gt;
-          &lt;button data-tg=&quot;canceller&quot;&gt;Cancel&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`Modal`)">Copy Markup</button>
-<hr/>
-<h3>Demo</h3>
-<div data-tg="modal">
-  <button data-tg="eventer">Show Popup</button>
-    <div data-tg="shadow">
-      <div data-tg="container">
-        <div data-tg="header">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-          <button data-tg="closer">Close</button>
-        </div>
-        <div data-tg="body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
-          </p>
-        </div>
-        <div data-tg="footer">
-          <button data-tg="saver">Save</button>
-          <button data-tg="canceller">Cancel</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<hr/>
-<h3>Selectors</h3>
-<pre><code class="language-html u">[data-tg="eventer"] = show modal container by clicking this buttons
-[data-tg="shadow"] = shadow of the modal (customisable)
-[data-tg="container"] = modal main container (customisable)
-[data-tg="header"] = header of the modal
-[data-tg="header"]>h3 = modal title
-[data-tg="closer"] = modal closer button
-[data-tg="body"] = modal body
-[data-tg="body"]>p = modal text content (customisable)
-[data-tg="footer"] = modal footer
-[data-tg="saver"] = visitor can agree with condition by clicking this button
-[data-tg="canceller"] = visitor can disagree with condition by clicking this button</code></pre>
-<hr/>
-<h3>Customization</h3>
-<pre><code class="language-html u">&lt;script&gt;
-const modal = {
-  shadow: &quot;#abc&quot;,
-    container: {
-    background: &quot;#abc&quot;,
-    maxWidth: &quot;321px&quot;,
-    minWidth: &quot;123px&quot;,
-    border: &quot;solid 1px #abc&quot;,
-    borderRadius: &quot;12px&quot;,
-      text: {
-      textAlign: &quot;justify&quot;,
-      maxHeight: &quot;321px&quot;
-      }
-    }
-  }
-&lt;/script&gt;</code></pre>
-<hr/>
-<h3>Default</h3>
-<pre><code class="language-html u">&lt;script&gt;
-modal = {
-  shadow: "#00000033",
-    container: {
-    background: "#fff",
-    maxWidth: "250px",
-    minWidth: "200px",
-    border: "solid 1px #000",
-    borderRadius: "10px",
-      text: {
-      textAlign: "justify",
-      maxHeight: "200px"
-      }
-    }
-  }
-  &lt;/script&gt;</code></pre>
-  
-</div>
-<div class="section" id="Slider">
-  <h2>Slider</h2>
-  <p>A slider displays one image at a time, allowing visitors to navigate through images using next and previous buttons. Each transition is accompanied by a smooth animation. Multiple sliders can be implemented on a single page, each functioning independently. Additionally, these sliders can be customized with various transition effects and navigation styles to enhance user experience.</p>
-  <h3>Structure</h3>
-  <pre><code class="language-html u Slider">&lt;div data-rt=&quot;sdc&quot; data-tg=&quot;sliderBox&quot;&gt;
-  &lt;div data-rt=&quot;sdr&quot; data-tg=&quot;slideable&quot;&gt;
-    &lt;img src=&quot;https://picsum.photos/id/237/300/500&quot; alt=&quot;&quot;/&gt;
-    &lt;img src=&quot;https://picsum.photos/id/227/300/500&quot; alt=&quot;&quot;/&gt;
-    &lt;img src=&quot;https://picsum.photos/id/235/300/500&quot; alt=&quot;&quot;/&gt;
-    &lt;img src=&quot;https://picsum.photos/id/230/300/500&quot; alt=&quot;&quot;/&gt;
-    &lt;img src=&quot;https://picsum.photos/id/238/300/500&quot; alt=&quot;&quot;/&gt;
-    &lt;img src=&quot;https://picsum.photos/id/225/300/500&quot; alt=&quot;&quot;/&gt;
-    &lt;img src=&quot;https://picsum.photos/id/234/300/500&quot; alt=&quot;&quot;/&gt;
-    &lt;img src=&quot;https://picsum.photos/id/231/300/500&quot; alt=&quot;&quot;/&gt;
-  &lt;/div&gt;
-  &lt;button data-rt=&quot;prev&quot; data-tg=&quot;prev&quot;&gt;Prev&lt;/button&gt;
-  &lt;button data-rt=&quot;next&quot; data-tg=&quot;next&quot;&gt;Next&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-  <button class="copy-button ani" onclick="copyToClipboard(`Slider`)">Copy Markup</button>
-  <hr/>
-  <h3>Demo</h3>
-  <div class="DemoSlider" data-rt="sdc" data-tg="sliderBox">
-   <div data-rt="sdr" data-tg="slideable">
-     <img  src="https://picsum.photos/id/237/300/500" alt="" />
-     <img src="https://picsum.photos/id/227/300/500" alt="" />
-     <img src="https://picsum.photos/id/235/300/500" alt="" />
-     <img src="https://picsum.photos/id/230/300/500" alt="" />
-     <img src="https://picsum.photos/id/238/300/500" alt="" />
-     <img src="https://picsum.photos/id/225/300/500" alt="" />
-     <img src="https://picsum.photos/id/234/300/500" alt="" />
-     <img src="https://picsum.photos/id/231/300/500" alt="" />
-     </div>
-   <button data-rt="prev" data-tg="prev">Prev</button>
-   <button data-rt="next" data-tg="next">Next</button>
-   </div>
-  <hr/>
-  <p class="summary">Note: Make sure all the image are equal  width or define weight by css .</p>
-    
-  </code></pre>
-</div>
-<div class="section" id="Tooltip">
-  <h2>Tooltip</h2>
-  <p>A tooltip provides additional information about any content. It becomes visible when a visitor hovers over the tooltip-activated content. Essentially, a tooltip offers a small description or brief explanation of complex text or any other content. Additionally, tooltips are useful for enhancing user experience by offering context-sensitive help without cluttering the interface. They can be customized in terms of appearance and behavior to fit the design and functionality of the website or application.</p>
-  <h3>Structure</h3>
-  <pre><code class="language-html u Tooltip">&lt;span data-tooltip=&quot;Text content&quot; &gt; tooltip &lt;/span&gt;</code></pre>
-  <button class="copy-button ani" onclick="copyToClipboard(`Tooltip`)">Copy Markup</button>
-  <hr/>
-  <p>Lorem ipsum dolor sit amet.<span data-tooltip="Text content" > tooltip </span></p>
-  <hr/>
-  <p class="summary">Note: by default tooltip visible on top site of the content . it can be specify by adding attribute</p>
-  <pre><code class="language-html u TooltipPS">&lt;span data-tooltip=&quot;Text content&quot; bottom &gt; for bottom side &lt;/span&gt;
-&lt;span data-tooltip=&quot;Text content&quot; left &gt; for left side &lt;/span&gt;
-&lt;span data-tooltip=&quot;Text content&quot; right &gt; for right side &lt;/span&gt;</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`TooltipPS`)">Copy Markup</button>
-<hr/>
-<h3>Demo</h3>
-<p>Lorem ipsum dolor sit amet.<span data-tooltip="Text content" bottom> for bottom side </span></p>
-<p>Lorem ipsum dolor sit.<span data-tooltip="Text content" left> for left side </span></p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing.<span data-tooltip="Text content" right> for right side </span></p>
-</div>
-<div class="section" id="Tab">
-  <h2>Tab</h2>
-  <p>Tabs are used to organize content into categories for easy access. When one category is visible, the others are hidden, allowing visitors to switch between them seamlessly. This design helps keep the interface clean and user-friendly, making it easier for users to find the information they need without being overwhelmed by too much content at once.
-
-Additionally, tabs can enhance the user experience by reducing the need for excessive scrolling and providing a more intuitive navigation system. By grouping related content together, tabs help users understand the structure of the information and quickly locate what they’re looking for. This approach is particularly useful for websites and applications with multiple sections or categories, ensuring a smooth and efficient browsing experience.</p>
-<h3>Structure</h3>
-<pre><code class="language-html u Tab">&lt;div data-tg=&quot;tabContainer&quot;&gt;
-  &lt;div data-tg=&quot;tabSwitchs&quot;&gt;
-    &lt;button&gt;Tab 1&lt;/button&gt;
-    &lt;button&gt;Tab 2&lt;/button&gt;
-    &lt;button&gt;Tab 3&lt;/button&gt;
-    &lt;button&gt;Tab 4&lt;/button&gt;
-    &lt;button&gt;Tab 5&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div data-tg=&quot;Tabs&quot;&gt;
-    &lt;div&gt;
-      &lt;h3&gt;1) Lorem ipsum dolor sit amet.&lt;/h3&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nemo pariatur quibusdam.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;h3&gt;2) Lorem ipsum dolor sit amet, consectetur.&lt;/h3&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ea voluptatibus iste tempora!&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;h3&gt;3) Lorem ipsum dolor sit amet, consectetur.&lt;/h3&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet, adipisicing elit. Dolorum adipisicing elit. Dolorum ea voluptatibus iste tempora!&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;h3&gt;4) Lorem ipsum dolor sit amet, consectetur.&lt;/h3&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet, adipisicing elit. Dolorum adipisicing elit. Dolorum ea voluptatibus iste tempora!&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;h3&gt;5) Lorem ipsum dolor sit amet, consectetur.&lt;/h3&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet, adipisicing elit. Dolorum adipisicing elit. Dolorum ea voluptatibus iste tempora!&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`Tab`)">Copy Markup</button>
-<hr />
-<h3>Demo</h3>
-<div data-tg="tabContainer">
-  <div data-tg="tabSwitchs">
-    <button>Tab 1</button>
-    <button>Tab 2</button>
-    <button>Tab 3</button>
-    <button>Tab 4</button>
-    <button>Tab 5</button>
-  </div>
-  <div data-tg="Tabs">
-    <div>
-      <h3>1) Lorem ipsum dolor sit amet.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nemo pariatur quibusdam.</p>
-    </div>
-    <div>
-      <h3>2) Lorem ipsum dolor sit amet, consectetur.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ea voluptatibus iste tempora!</p>
-    </div>
-    <div>
-      <h3>3) Lorem ipsum dolor sit amet, consectetur.</h3>
-      <p>Lorem ipsum dolor sit amet, adipisicing elit. Dolorum adipisicing elit. Dolorum ea voluptatibus iste tempora!</p>
-    </div>
-    <div>
-      <h3>4) Lorem ipsum dolor sit amet, consectetur.</h3>
-      <p>Lorem ipsum dolor sit amet, adipisicing elit. Dolorum adipisicing elit. Dolorum ea voluptatibus iste tempora!</p>
-    </div>
-    <div>
-      <h3>5) Lorem ipsum dolor sit amet, consectetur.</h3>
-      <p>Lorem ipsum dolor sit amet, adipisicing elit. Dolorum adipisicing elit. Dolorum ea voluptatibus iste tempora!</p>
-    </div>
-  </div>
-</div>
-<p class="summary">Note: Fisrt tab will be display by default</p>
-
-</div>
-<div class="section" id="Pager">
-  <h2>Pager</h2>
-  <p>A pager divides a single article into multiple pages. This is particularly useful for very long articles that might take a long time to load in full. By breaking the content into smaller sections, a pager can help manage loading times more efficiently and improve the reader’s experience. Additionally, it allows readers to navigate through the content more easily, focusing on specific sections without being overwhelmed by the entire article at once. This method also reduces the strain on server resources, ensuring smoother performance for websites with heavy traffic.</p>
-  <h3>Structure</h3>
-  <pre><code class="language-html u Pager">&lt;div data-tg=&quot;pager&quot;&gt;
-  &lt;div data-page&gt;
-  &lt;!--Content--&gt;
-  &lt;/div&gt;
-  &lt;div data-page&gt;
-  &lt;!--Content--&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`Pager`)">Copy Markup</button>
-<hr />
-<h3>Demo</h3>
-<div data-tg="pager">
-  <div data-page>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, suscipit totam itaque ipsam distinctio doloribus aperiam et omnis nisi reprehenderit!
-  </div>
-  <div data-page>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat id distinctio nesciunt, doloribus consectetur expedita ipsa unde sunt iste cupiditate repudiandae.
-  </div>
-  <div data-page>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate totam, quaerat atque?
-  </div>
-</div>
-<hr/>
-<h3>Selectors</h3>
-<pre><code class="language-html u">[data-tg="pager"] = main container
-[data-page] = pages
-[data-page][data-pageon] = visible page
-[data-tg="numberDiv"] = page navigator number div
-[data-tg="pageNumber"] = page navigator button</code></pre>
-<hr/>
-<p class="summary">Note: always first page is visible by default</p>
-
-</div>
-<div class="section" id="DropDown">
-  <h2>Drop Down</h2>
-  <p>A drop-down is a list of items that appears after clicking a button. On a single page, there can be multiple drop-downs, and each drop-down can interact with the others. This functionality allows for a more dynamic and interactive user experience. For instance, selecting an option in one drop-down can filter or change the options available in another. This interconnected behavior is particularly useful in forms and complex interfaces, making navigation and data entry more efficient and user-friendly.</p>
-  <h3>Structure</h3>
-  <pre><code class="language-html u DropDown">&lt;div data-tg=&quot;dropDown&quot;&gt;
-  &lt;button&gt;Drop Down&lt;/button&gt;
-  &lt;div&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-    &lt;li&gt;Item 3&lt;/li&gt;
-    &lt;li&gt;Item 4&lt;/li&gt;
-    &lt;li&gt;Item 5&lt;/li&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`DropDown`)">Copy Markup</button>
-<hr/>
-<h3>Demo</h3>
-<div data-tg="dropDown">
-  <button>Drop Down</button>
-  <div>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
-  </div>
-</div>
-<hr/>
-<h3>Selectors</h3>
-<pre><code class="language-html u">[data-tg="dropDown"] = main dropDown container
-[data-dropon] = after visible dropDown div</code></pre>
-<hr/>
-<p class="summary">Note: By default all dropDown hidden if one dropDown is visible than all other will hide .</p>
-</div>
-<div class="section" id="Alert">
-  <h2>Alert</h2>
-  <p>An alert is a warning or message about any context that can be closed by clicking a button. On a single page, there can be multiple alerts, each providing important information or notifications. These alerts can be used to inform users about various events, such as errors, updates, or confirmations. They help ensure that users are aware of critical information without overwhelming them. Additionally, alerts can be styled differently to indicate their level of importance, such as using colors or icons to distinguish between warnings, errors, and informational messages.</p>
-  <h3>Structure</h3>
-  <pre><code class="language-html u Alert">&lt;div data-tg=&quot;alert&quot;&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, ct enim ipsa, quia ex hic cumque, ullam totam. Doloribus, cum!&lt;/p&gt;
-  &lt;button&gt;close&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`Alert`)">Copy Markup</button>
-<hr/>
-<div data-tg="alert">
-  <p>Lorem ipsum dolor sit amet, ct enim ipsa, quia ex hic cumque, ullam totam. Doloribus, cum!</p>
-  <button>close</button>
-</div>
-<hr/>
-<h3>Selectors</h3>
-<pre><code class="language-html u">[data-tg="alert"] = alert container
-[data-tg="alert"] = alert closer button</code></pre>
-</div>
-<div class="section" id="RangeCount">
-  <h2>Range Count</h2>
-  <p>Range Count is count the  changes value of input</p>
-  <h3>Structure</h3>
-  <pre><code class="language-html u Range">&lt;input type=&quot;range&quot; data-tg=&quot;range&quot;/&gt;</code></pre>
-  <button class="copy-button ani" onclick="copyToClipboard(`Range`)">Copy Markup</button>
-  <hr/>
-  <input type="range" data-tg="range"/>
-  <hr/>
-  <h3>Selectors</h3>
-  <pre><code class="language-html u">[data-tg="range"] = range count active
-[data-tg="range"]+span = counter</code></pre>
-</div>
-<div class="section" id="Cart">
-  <h2>Cart</h2>
-  <p>Users can add their favorite items to a cart. The selected items will remain in the cart until the user decides to remove them. Each page can have only one cart, but the cart can contain multiple items. Additionally, users can easily manage their cart by adding or removing items as they wish, ensuring a seamless selecting experience.</p>
-  <pre><code class="language-html u Cart">  &#x3C;div data-tg=&#x22;cart&#x22;&#x3E;&#x3C;/div&#x3E;
-  &#x3C;div data-tg=&#x22;cItem&#x22; id=&#x22;tg-001&#x22;&#x3E;
-  &#x3C;a href=&#x22;https://contents-up.blogspot.com/p/about.html&#x22; data-tg=&#x22;cURL&#x22;&#x3E;
-  &#x3C;img src=&#x22;https://picsum.photos/300/300?image=3&#x22; alt=&#x22;&#x22; data-tg=&#x22;cImg&#x22; /&#x3E;
-  &#x3C;h1 data-tg=&#x22;cTitle&#x22;&#x3E;Shetu rakib &#x3C;/h1&#x3E;
-  &#x3C;/a&#x3E;
-  &#x3C;button data-tg=&#x22;cAdd&#x22;&#x3E;Add&#x3C;/button&#x3E;
-  &#x3C;/div&#x3E;</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`Cart`)">Copy Markup</button>
-<h3>Demo</h3>
-  <div data-tg="cart"></div>
-  <div data-tg="cItem" id="tg-001">
-    <a href="https://contents-up.blogspot.com/p/about.html" data-tg="cURL">
-      <img src="https://picsum.photos/300/300?image=3" alt="" data-tg="cImg" />
-      <h1 data-tg="cTitle">Shetu rakib </h1>
-    </a>
-    <button data-tg="cAdd">Add</button>
-  </div>
-  <div data-tg="cItem" id="tg-002">
-    <a href="https://contents-up.blogspot.com" data-tg="cURL">
-      <img src="https://picsum.photos/300/300?image=2" alt="" data-tg="cImg" />
-      <h1 data-tg="cTitle">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
-    </a>
-    <button data-tg="cAdd">Add</button>
-  </div>
-  <div data-tg="cItem" id="tg-003">
-    <a href="https://contents-up.blogspot.com" data-tg="cURL">
-      <img src="https://picsum.photos/300/300?image=4" alt="" data-tg="cImg" />
-      <h1 data-tg="cTitle">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
-    </a>
-    <button data-tg="cAdd">Add</button>
-  </div>
-  <div data-tg="cItem" id="tg-004">
-    <a href="https://contents-up.blogspot.com/p/////about.html" data-tg="cURL">
-      <img src="https://picsum.photos/300/300?image=9" alt="" data-tg="cImg" />
-      <h1 data-tg="cTitle">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
-    </a>
-    <button data-tg="cAdd">Add</button>
-  </div>
-<hr/>
-<h3>Selectors</h3>
-<pre><code class="language-html u"> [data-tg="cart"] = cart div where all selected items will be visible
- [data-tg="selectedItem"] = selected items in cart
- [data-tg="itemRemoveBtn"] = item remove button in cart
- [data-tg="cItem"] = main item container
- #id = post/article id [unique]
- [data-tg="cURL"] = item post/article anchor tag
- [data-tg="cImg"] = post/article thumbnail image
- [data-tg="cTitle"] = post/article main title
- [data-tg="cAdd"] = checkbox for selection favourite items</code></pre>
- <hr/>
- <p class="summary">Note: Users can add their favorite items to a cart, allowing them to explore and review these items later. The selected items will remain in the cart until the user decides to remove them. Note: Each page can have only one cart. Favorite items are saved in the browser’s localStorage, not in any backend database. The cart can contain multiple items, and users can easily manage their cart by adding or removing items as they wish, ensuring a seamless shopping experience.</p>
-</div>
-<div class="section" id="ParentHide">
-  <h2>Parent Hide</h2>
-<p>Parent Hide is a function that hides the parent element when its child button is clicked. This can be particularly useful for creating dynamic and interactive web pages. For example, you might use this function to remove a notification or a specific section of a form when the user clicks a close button.</p>
-<h3>Structure</h3>
-<pre><code class="language-html u ParentHide">&lt;div data-tg=&quot;parentHide&quot;&gt;
-  &lt;button&gt;hide&lt;/button&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`ParentHide`)">Copy Markup</button>
-<hr/>
-<h3>Demo</h3>
-<div data-tg="parentHide">
-<button>hide</button>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-</div>
-<hr/>
-</div>
-<div class="section" id="NextSiblingToggle">
-  <h2>Text Sibling Toggle</h2>
-  <p>Next Sibling Toggle is hide and show the next sibling element by clicking previous button .</p>
-  <pre><code class="language-html u NextSiblingToggle">&lt;button data-tg=&quot;nextSiblingToggle&quot;&gt;ToggleKit&lt;/button&gt;
-&lt;div&gt; ToggleKit inomin &amp; tatino uf 7 gumika dor ftaitonamish 3 ek unimint , Sed&amp; zeu sed yik gojli yik kir!&lt;/div&gt;</code></pre>
-<button class="copy-button ani" onclick="copyToClipboard(`NextSiblingToggle`)">Copy Markup</button>
-<hr/>
-<h3>Demo</h3>
-<button data-tg="nextSiblingToggle">ToggleKit</button>
-<div> ToggleKit inomin & tatino uf 7 gumika dor ftaitonamish 3 ek unimint , Sed& zeu sed yik gojli yik kir!</div>
-<hr />
-<p class="summary">By default next sibling will be hidden after clicking previous element then the next element will visible</p>
-</div>
-
-
-
-
-  </div>
-</div>
-<div class="footer">
+<div id="footer">
   <div class="address">
     <a href="https://github.com/ToggleKit">GitHub</a>
     <a href="https://youtube.com/@toggle-kit">YouTube</a>
     <a href="hhtps://www.relaxtemplate.top">Template</a>
   </div>
-  <p class="cradit"><b>ToggleKit</b> Interactive Components</p>
+  <p class="cradit"><a href="#home">ToggleKit</a> Interactive Components</p>
+</div>
 </div>
 <script src="main.js"></script>
-<script src="prism.js"></script>
+<script defer src="prism.js"></script>
+<script defer src="togglekit.js"></script>
 </body>
 </html>
