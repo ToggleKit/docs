@@ -1,0 +1,88 @@
+
+<div class="section" id="NestMenu">
+  <h2>Nest Menu</h2>
+  <p>The nestMenu component serves as the navigator for a website, converting a list of links into a dropdown navigation menu. Note that only one nestMenu can be added to a webpage. This component also adds class names to the dropdowns, allowing for custom styling. Additionally, it enables you to specify the container for the dropdown navigation bar and define the breakpoints.</p>
+  <h3>Structure</h3>
+    <pre><code class="language-html u NestMenu">&lt;div data-tg=&apos;nestMenu&apos;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt; Services &lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;_service 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;__service 1.1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;_Project 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;_Project 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;__Project 2.1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;__Project 2.2&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<button class="copy-button ani" onclick="copyToClipboard(`NestMenu`)"
+>Copy Markup</button>
+<hr/>
+<h3>Demo</h3>
+<div data-tg='nestMenu'>
+  <ul>
+    <li><a href="#"> Services </a></li>
+    <li><a href="#">_service 1</a></li>
+    <li><a href="#">__service 1.1</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">_Project 1</a></li>
+    <li><a href="#">_Project 2</a></li>
+    <li><a href="#">__Project 2.1</a></li>
+    <li><a href="#">__Project 2.2</a></li>
+  </ul>
+</div>
+<hr/>
+<h3>Convert into</h3>
+    <pre><code class="language-html u">
+&lt;div data-tg=&quot;nestMenu&quot;&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;on-sub&quot;&gt;
+      &lt;a href=&quot;javascript:void(0)&quot;&gt; Services &lt;/a&gt;
+      &lt;ul class=&quot;sub-menu&quot;&gt;
+        &lt;li class=&quot;drop-1&quot;&gt;
+          &lt;a href=&quot;javascript:void(0)&quot;&gt;service 1&lt;/a&gt;
+          &lt;ul class=&quot;sub-sub-menu&quot;&gt;
+            &lt;li class=&quot;drop-2&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;service 1.1&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  
+    &lt;li class=&quot;on-sub&quot;&gt;
+      &lt;a href=&quot;javascript:void(0)&quot;&gt;Projects&lt;/a&gt;
+      &lt;ul class=&quot;sub-menu&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;Project 1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;drop-1&quot;&gt;
+          &lt;a href=&quot;javascript:void(0)&quot;&gt;Project 2&lt;/a&gt;
+          &lt;ul class=&quot;sub-sub-menu&quot;&gt;
+            &lt;li class=&quot;drop-2&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;Project 2.1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;drop-2&quot;&gt;
+              &lt;a href=&quot;#&quot;&gt;Project 2.2&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<hr/>
+<h3>Selectors</h3>
+<pre><code class="language-html u">
+[data-tg='nestMenu'] = main container
+.on-sub = parent menu
+.sub-menu = first sub menu container (ul)
+.sub-menu.show = add class name after .on-sub clicked
+.drop-1 = first sub menu lists (li)
+.sub-sub-menu = second sub menu container (ul)
+.sub-sub-menu.show = add class name after .drop-1 clicked
+.drop-2 = second sub menu lists (li)
+</code></pre>
+</div>
