@@ -1,0 +1,38 @@
+
+<div class="section" id="Pager">
+  <h2>Pager</h2>
+  <p>A pager divides a single article into multiple pages. This is particularly useful for very long articles that might take a long time to load in full. By breaking the content into smaller sections, a pager can help manage loading times more efficiently and improve the reader’s experience. Additionally, it allows readers to navigate through the content more easily, focusing on specific sections without being overwhelmed by the entire article at once. This method also reduces the strain on server resources, ensuring smoother performance for websites with heavy traffic.</p>
+  <h3>Structure</h3>
+  <pre><code class="language-html u Pager">&lt;div data-tg=&quot;pager&quot;&gt;
+  &lt;div data-page&gt;
+  &lt;!--Content--&gt;
+  &lt;/div&gt;
+  &lt;div data-page&gt;
+  &lt;!--Content--&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-button ani" onclick="copyToClipboard(`Pager`)">Copy Markup</button>
+<hr />
+<h3>Demo</h3>
+<div data-tg="pager">
+  <div data-page>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, suscipit totam itaque ipsam distinctio doloribus aperiam et omnis nisi reprehenderit!
+  </div>
+  <div data-page>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat id distinctio nesciunt, doloribus consectetur expedita ipsa unde sunt iste cupiditate repudiandae.
+  </div>
+  <div data-page>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate totam, quaerat atque?
+  </div>
+</div>
+<hr/>
+<h3>Selectors</h3>
+<pre><code class="language-html u">[data-tg="pager"] = main container
+[data-page] = pages
+[data-page][data-pageon] = visible page
+[data-tg="numberDiv"] = page navigator number div
+[data-tg="pageNumber"] = page navigator button</code></pre>
+<hr/>
+<p class="summary">Note: always first page is visible by default</p>
+
+</div>
