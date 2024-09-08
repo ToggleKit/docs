@@ -31,7 +31,9 @@ async function getText(path) {
 function hashChange() {
     let hash = window.location.hash;
     let url = hash ? hash.replace('#', '') + '.html' : 'home.html';
-    getText(url);
+    if (window.location.pathname !== url) {
+        getText(url);
+    }
 }
 
 function copyToClipboard(cls) {
